@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 void *start_routine(void *arg)
 {
     long val = (long)arg;
-    printf("Hello World du thread %ld \n", val);
+    printf("Hello World ! Execution thread %ld \n", val);
     pthread_exit(&val);
 }
